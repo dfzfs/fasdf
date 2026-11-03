@@ -1,0 +1,37 @@
+/* Chat Review */
+.mes_button.cr-btn.cr-active { color: #ffcc33; }
+
+.cr-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 0 6px;
+    border-radius: 8px;
+    font-size: 0.75em;
+    line-height: 1.6;
+    background: rgba(255, 204, 51, 0.15);
+    border: 1px solid rgba(255, 204, 51, 0.4);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.cr-form { text-align: left; }
+.cr-form h3 { margin: 0 0 10px 0; }
+.cr-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0; }
+.cr-row label { display: flex; gap: 8px; align-items: center; }
+.cr-vote.cr-on { outline: 2px solid #4caf50; background: rgba(76, 175, 80, 0.2); }
+.cr-vote[data-vote="down"].cr-on { outline-color: #e53935; background: rgba(229, 57, 53, 0.2); }
+.cr-star { cursor: pointer; font-size: 1.8em; color: #888; user-select: none; }
+.cr-star.cr-on { color: #ffcc33; }
+.cr-reason { width: 100%; min-height: 90px; resize: vertical; }
+
+.cr-history { text-align: left; max-height: 60vh; overflow-y: auto; }
+.cr-history h4 { margin: 14px 0 6px 0; }
+.cr-hrow {
+    display: flex; gap: 8px; align-items: flex-start; justify-content: space-between;
+    padding: 6px 0; border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+.cr-hsub { opacity: 0.75; font-size: 0.85em; word-break: break-word; }
+.cr-empty { opacity: 0.6; font-size: 0.9em; }
+
+.cr-settings .cr-setting-row { display: flex; gap: 8px; align-items: center; justify-content: space-between; margin: 6px 0; }
+.cr-settings input[type="number"] { width: 80px; }
